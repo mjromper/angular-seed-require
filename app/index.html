@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    [ng-cloak] {
+      display: none;
+    }
+  </style>
+ 
+  <title>Angular Seed with Require</title>
+  <link rel="stylesheet" href="lib/bower_components/font-awesome/css/font-awesome.css">
+  <link rel="stylesheet" href="lib/bower_components/bootstrap/dist/css/bootstrap.css" media="screen">
+  <link rel="stylesheet" href="style/css/app.css" media="screen">
+</head>
+
+<body ng-cloak skw-check-device >
+    
+    <div ng-show="isLogged" myapp-navbar ></div>
+
+    <div class="main" ng-view></div>
+  
+
+  <script data-main="js/loader.js" src="lib/bower_components/requirejs/require.js"></script>
+
+</body>
+</html>
